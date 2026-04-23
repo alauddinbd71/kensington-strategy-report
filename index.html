@@ -781,6 +781,29 @@ html, body {
     width: 100% !important;
     max-width: 100% !important;
 }
+
+/* Step 07, 08 এবং অন্যান্য কন্টেন্ট কাটা পড়া বন্ধ করতে */
+.container, .step-box, .audit-card, .table-responsive {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important; /* কন্টেন্ট বড় হলে ডানে স্ক্রল করা যাবে, কিন্তু সাদা জায়গা হবে না */
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    box-sizing: border-box !important;
+}
+
+/* টেক্সট যাতে স্ক্রিনের বাইরে না যায় */
+h1, h2, h3, h4, p, span {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+/* ছবির সাইজ ঠিক করা */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+  
 }
 
 </style>
