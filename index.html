@@ -711,6 +711,33 @@ nav .row {
     .audit-profile-img { width: 110px; height: 120px; }
     .audit-consultant-card { width: auto; flex: 1; }
   }
+/* মোবাইল ভিউর জন্য বিশেষ সমাধান */
+@media (max-width: 768px) {
+    /* ১. ফুটারে জায়গা তৈরি করা যাতে বাটন লেখা না ঢাকে */
+    footer {
+        padding-bottom: 140px !important;
+    }
+
+    /* ২. নিচের ফিক্সড বাটনের সাইজ ও গ্যাপ ঠিক করা */
+    .fixed-footer {
+        padding: 10px 15px !important;
+        gap: 10px !important;
+        background: rgba(0, 0, 0, 0.8) !important; /* হালকা ঝাপসা ব্যাকগ্রাউন্ড */
+        backdrop-filter: blur(5px);
+    }
+
+    /* ৩. বাটনের টেক্সট যাতে মোবাইল স্ক্রিনে সুন্দর দেখায় */
+    .fixed-footer .btn {
+        font-size: 14px !important;
+        padding: 12px 5px !important;
+        flex: 1; /* দুটি বাটন সমান সমান জায়গা নিবে */
+    }
+
+    /* ৪. উপরের হেডার যাতে কেটে না যায় */
+    header, .navbar {
+        padding-top: 15px !important;
+    }
+}
 
 </style>
 </head>
