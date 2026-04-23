@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kensington Dental Centre — Confidential GBP & Local SEO Audit Report | DentalCallFlow™</title>
 <meta name="description" content="Private audit report for Kensington Dental Centre, Saskatoon. Prepared by DentalCallFlow™.">
@@ -803,6 +803,32 @@ img {
     max-width: 100% !important;
     height: auto !important;
 }
+
+/* ১. পুরো পেজের ডানে-বামে নড়াচড়া বন্ধ করা */
+    html, body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* ২. Step 07, 08 এবং সব কন্টেইনার যাতে স্ক্রিনের ভেতরে থাকে */
+    .container, .container-fluid, .row, section {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        overflow-x: hidden !important;
+    }
+
+    /* ৩. কন্টেন্ট যাতে ভেঙে নিচের লাইনে আসে (কাটা পড়বে না) */
+    .step-box, .audit-card, .audit-item {
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        white-space: normal !important;
+    }
   
 }
 
